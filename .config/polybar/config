@@ -27,7 +27,7 @@ font-2 = "Font Awesome 5 Brands:size=10;1"
 
 modules-left = i3
 ;modules-center =
-modules-right = pulseaudio wlan battery date
+modules-right = pulseaudio wlan cable battery date
 
 tray-position = right
 ;tray-padding =
@@ -208,6 +208,16 @@ ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
 ramp-signal-foreground = #cbd1cd
+
+[module/cable]
+type = internal/network
+interface = enp2s0
+interval = 3.0
+
+format-connected =  <label-connected>
+label-connected = %local_ip%
+format-disconnected =  <label-disconnected>
+label-disconnected = "down"
 
 [module/date]
 type = internal/date
