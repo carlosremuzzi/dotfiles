@@ -54,3 +54,10 @@ augroup yaml_folding
     au FileType yaml setlocal foldmethod=indent
 augroup END
 
+" .slide filetype file
+"if exists("did_load_filetypes")
+"  finish
+"endif
+augroup filetypedetect
+  au! BufRead,BufNewFile *.slide		setfiletype slide
+augroup END
