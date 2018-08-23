@@ -6,6 +6,7 @@ DOTFILES_ROOT=$(pwd -P)
 set -e
 
 cp ${DOTFILES_ROOT}/.Xresources $HOME/.Xresources
+cp ${DOTFILES_ROOT}/.xbindkeysrc $HOME/.xbindkeysrc
 cp ${DOTFILES_ROOT}/.xinitrc $HOME/.xinitrc
 cp ${DOTFILES_ROOT}/.vimrc $HOME/.vimrc
 cp ${DOTFILES_ROOT}/.zshrc $HOME/.zshrc

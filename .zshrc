@@ -22,10 +22,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=5"
 
 alias la="ls -lahtr"
 
-# GO
-export GOPATH=$HOME/go
-export PATH="$PATH:$GOPATH/bin"
-
 # Vdpau
 export VDPAU_DRIVER=va_gl
 
