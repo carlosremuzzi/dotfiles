@@ -68,7 +68,7 @@ URxvt.iso14755: false
 URxvt.iso14755_52: false
 
 URxvt.intensityStyles: false
-URxvt.font: xft:Inconsolata Nerd Font:size=16
+URxvt.font: xft:Inconsolata Nerd Font:size=14
 URxvt.depth:                      32
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
@@ -81,7 +81,7 @@ rofi.color-window: S_base02, S_magenta, S_magenta
 rofi.color-normal: S_base02, S_base1, S_base02, S_magenta, S_base3
 rofi.sidebar-mode: false
 rofi.lines: 5
-rofi.font: Inconsolata Nerd Font 16
+rofi.font: Inconsolata Nerd Font 14
 rofi.bw: 1
 rofi.padding: 5
 rofi.fixed-num-lines: true
