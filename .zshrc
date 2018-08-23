@@ -4,7 +4,6 @@ export ZSH=$HOME/.oh-my-zsh
 
 if [[ -z "$DISPLAY" ]]; then
 
-  alias startx="startx -- -nocursor"
   ZSH_THEME="kolo"
   plugins=(git ssh-agent zsh-autosuggestions)
 
