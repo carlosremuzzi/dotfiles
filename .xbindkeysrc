@@ -1,16 +1,18 @@
-# Increase volume
-"pamixer --increase 5"
-  XF86AudioRaiseVolume
-
-# Decrease volume
-"pamixer --decrease 5"
-  XF86AudioLowerVolume
-
-# Toggle Mute
 "pamixer -t"
-  XF86AudioMute
+   XF86AudioMute
 
-# enabling cmus controllers from keyboard
+"pamixer --increase 5"
+   XF86AudioRaiseVolume
+
+"pamixer --decrease 5"
+   XF86AudioLowerVolume
+
+"xbacklight -inc 1"
+   XF86MonBrightnessUp
+
+"xbacklight -dec 1"
+   XF86MonBrightnessDown
+
 "cmus-remote -u"
   XF86AudioPlay
 "cmus-remote -n"
