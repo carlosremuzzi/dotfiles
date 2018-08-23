@@ -11,3 +11,4 @@ cp ${DOTFILES_ROOT}/.xinitrc $HOME/.xinitrc
 cp ${DOTFILES_ROOT}/.vimrc $HOME/.vimrc
 cp ${DOTFILES_ROOT}/.zshrc $HOME/.zshrc
 cp ${DOTFILES_ROOT}/.tmux.conf $HOME/.tmux.conf
+cp ${DOTFILES_ROOT}/.config/i3/config $HOME/.config/i3/config
