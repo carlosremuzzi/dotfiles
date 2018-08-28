@@ -4,15 +4,15 @@ export ZSH=$HOME/.oh-my-zsh
 
 if [[ -z "$DISPLAY" ]]; then
 
-  ZSH_THEME="kolo"
-  plugins=(git ssh-agent zsh-autosuggestions)
+    ZSH_THEME="kolo"
+    plugins=(git ssh-agent zsh-autosuggestions)
 
 else
 
-  ZSH_THEME="avit"
-  export ZSH_TMUX_AUTOSTART=true
-  export ZSH_TMUX_AUTOCONNECT=false
-  plugins=(git ssh-agent gpg-agent zsh-autosuggestions tmux)
+    ZSH_THEME="avit"
+    export ZSH_TMUX_AUTOSTART=true
+    export ZSH_TMUX_AUTOCONNECT=false
+    plugins=(git ssh-agent gpg-agent zsh-autosuggestions tmux)
 
 fi
 
