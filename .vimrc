@@ -59,5 +59,5 @@ augroup END
 "  finish
 "endif
 augroup filetypedetect
-  au! BufRead,BufNewFile *.slide		setfiletype slide
+    au! BufRead,BufNewFile *.slide setfiletype slide
 augroup END
