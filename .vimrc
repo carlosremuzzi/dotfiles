@@ -22,6 +22,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'sotte/presenting.vim'
 Plugin 'zchee/vim-go-slide'
+Plugin 'mboughaba/i3config.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
