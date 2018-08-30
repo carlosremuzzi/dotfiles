@@ -41,6 +41,7 @@ filetype plugin indent on    " required
 syntax on
 set number
 set background=dark
+set tabstop=4 shiftwidth=4 expandtab
 colorscheme solarized
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
