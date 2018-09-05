@@ -30,13 +30,6 @@ filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 syntax on
 set number
@@ -51,15 +44,12 @@ augroup javascript_folding
     au!
     au FileType javascript setlocal foldmethod=syntax
 augroup END
+
 augroup yaml_folding
     au!
     au FileType yaml setlocal foldmethod=indent
 augroup END
 
-" .slide filetype file
-"if exists("did_load_filetypes")
-"  finish
-"endif
 augroup filetypedetect
     au! BufRead,BufNewFile *.slide setfiletype slide
 augroup END
