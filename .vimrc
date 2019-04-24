@@ -13,10 +13,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'valloric/youcompleteme'
 Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 Plugin 'chrisbra/colorizer'
 Plugin 'diefans/vim-da-yaml'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'morhetz/gruvbox'
 Plugin 'pangloss/vim-javascript'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
@@ -35,9 +34,8 @@ syntax on
 set number
 set background=dark
 set tabstop=4 shiftwidth=4 expandtab
-colorscheme solarized
-let g:airline_theme='solarized'
-let g:airline_solarized_bg='dark'
+colorscheme gruvbox
+let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 augroup javascript_folding
