@@ -4,7 +4,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 if [[ -z "$DISPLAY" ]]; then
 
-    ZSH_THEME="kolo"
+    ZSH_THEME="pygmalion"
     plugins=(git ssh-agent zsh-autosuggestions)
 
 else
@@ -20,8 +20,5 @@ source $ZSH/oh-my-zsh.sh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=5"
 
 alias la="ls -lahtr"
-
-# Vdpau
-export VDPAU_DRIVER=va_gl
 
 export EDITOR=vim
