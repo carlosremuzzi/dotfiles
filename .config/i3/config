@@ -140,46 +140,37 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+# volume control
+bindsym XF86AudioRaiseVolume  exec pamixer -i 5
+bindsym XF86AudioLowerVolume  exec pamixer -d 5
+bindsym XF86AudioMute         exec pamixer -t
+
+# backlight
+bindsym XF86MonBrightnessUp   exec light -A 3
+bindsym XF86MonBrightnessDown exec light -U 3
+
 # Set shut down, restart and locking features
 bindsym $mod+0 exec --no-startup-id i3lock -f -i $HOME/wallpapers/lock.png 
 
-# Resize window (you can also use the mouse for that)
-bindsym $mod+r mode "resize"
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 5 px or 5 ppt
-        bindsym k resize grow height 5 px or 5 ppt
-        bindsym l resize shrink height 5 px or 5 ppt
-        bindsym semicolon resize grow width 5 px or 5 ppt
+    bindsym j resize shrink width 5 px or 5 ppt
+    bindsym k resize grow height 5 px or 5 ppt
+    bindsym l resize shrink height 5 px or 5 ppt
+    bindsym semicolon resize grow width 5 px or 5 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
 
-        # exit resize mode: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }
+bindsym $mod+r mode "resize"
 
 # Autostart applications
-exec_always --no-startup-id /$HOME/.config/polybar/i3wmthemer_bar_launch.sh
+#exec_always --no-startup-id /$HOME/.config/polybar/i3wmthemer_bar_launch.sh
 
-# Theme colors
-client.focused #d33682 #1e1e20 #d33682 #d33682 #d33682
-client.focused_inactive #cbd1cd #1e1e20 #cbd1cd #919893 #919893
-client.unfocused #cbd1cd #1e1e20 #cbd1cd #919893 #919893
-client.urgent #cbd1cd #1e1e20 #cbd1cd #919893 #919893
-client.placeholder #cbd1cd #1e1e20 #cbd1cd #919893 #919893
-
-client.background #1e1e20
-
-# Gaps
 gaps inner 10
 gaps outer -4
 
