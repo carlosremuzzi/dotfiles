@@ -1,1 +1,1 @@
-Jimmy's dotfiles
+CG Remuzzi's dotfiles
